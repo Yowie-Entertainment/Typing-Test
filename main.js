@@ -23,11 +23,15 @@ const init = () => {
 
 init();
 
+//function that sets the green screen
 const setGreenColor = () => {
+    //.style changes the css of the variable
     clickableArea.style.backgroundColor = "#32cd32";
+    //.innerHTML actually changes the div text
     message.innerHTML = "CLICK NOWWWW";
     message.style.color = "#111";
     greenDisplayed = true;
+    //starts "timer"
     timeNow = Date.now();
 }
 
