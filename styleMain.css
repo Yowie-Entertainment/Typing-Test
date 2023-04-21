@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');* {
+    margin: 2px
+}
+
+
+.website-header {
+    text-align: center;
+    font-size: 80px;
+    background: orange;
+    margin-top: 0px;
+    color: white;
+    font-weight: 20px;
+    font-family: 'Rubik Pixels', cursive;
+}
+
+.reaction-time-link {
+    cursor: pointer;
+    
+}
