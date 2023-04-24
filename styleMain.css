@@ -13,7 +13,17 @@
     font-family: 'Rubik Pixels', cursive;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .reaction-time-link {
     cursor: pointer;
-    
+    flex: 1;
+    flex-grow: 1;
+}
+
+.typing-test-link {
+    flex-grow: 1;
 }

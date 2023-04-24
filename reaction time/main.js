@@ -28,7 +28,7 @@ init();
 //function that sets the green screen
 const setGreenColor = () => {
     //.style changes the css of the variable
-    clickableArea.style.backgroundColor = "#32cd32";
+    clickableArea.style.backgroundColor = "#7EFF72";
     //.innerHTML actually changes the div text
     message.innerHTML = "CLICK NOWWWW";
     message.style.color = "#111";
@@ -89,7 +89,7 @@ const displayReactionTime = (rt) => {
     scores.push(rt);
     console.log("scores " + scores)
 
-    if (scores.length >= 2) {
+    if (scores.length >= 5) {
         endGame();
     }
 }
@@ -105,7 +105,7 @@ const displayTooSoon = () => {
 clickableArea.addEventListener("click", () => {
     if (greenDisplayed) {
         let clickTime = Date.now();
-        let reactionTime = clickTime - timeNow;
+        let reactionTime = (clickTime - timeNow) - 50;
         console.log("reaction time " + reactionTime);
         displayReactionTime(reactionTime);
         return;

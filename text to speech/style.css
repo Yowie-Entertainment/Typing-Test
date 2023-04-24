@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5256AD;
+}
+
+.wrapper {
+    background: #FFF;
+    width: 370px;
+    /* border-radius is the roundness of the border */
+    border-radius: 7px;
+    padding: 25px 30px;
+}
+
+/* targets the headers in the .wrapper class */
+.wrapper header {
+    text-align: center;
+}
