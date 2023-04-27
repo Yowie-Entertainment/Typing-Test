@@ -4,6 +4,7 @@
 
 
 .website-header {
+    display: flex;
     text-align: center;
     font-size: 80px;
     background: orange;
@@ -26,4 +27,18 @@
 
 .typing-test-link {
     flex-grow: 1;
+}
+
+.explosion {
+    width: 350px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.meteor {
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+    align-content: center;
+    margin-top: 30px;
 }

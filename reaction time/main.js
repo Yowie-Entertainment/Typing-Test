@@ -52,7 +52,7 @@ const startGame = () => {
 };
 
 //when on mainmenu and clicked, removed the active class from mainmenu
-mainMenu.addEventListener("click", () => {
+mainMenu.addEventListener("mousedown", () => {
     mainMenu.classList.remove("active");
     startGame();
 });
@@ -102,10 +102,10 @@ const displayTooSoon = () => {
     clearTimeout(timer);
 }
 
-clickableArea.addEventListener("click", () => {
+clickableArea.addEventListener("mousedown", () => {
     if (greenDisplayed) {
         let clickTime = Date.now();
-        let reactionTime = (clickTime - timeNow) - 50;
+        let reactionTime = (clickTime - timeNow);
         console.log("reaction time " + reactionTime);
         displayReactionTime(reactionTime);
         return;
@@ -121,7 +121,7 @@ clickableArea.addEventListener("click", () => {
     }
 });
 
-playAgainBtn.addEventListener("click", () => {
+playAgainBtn.addEventListener("mousedown", () => {
     endScreen.classList.remove("active");
     init();
     waitingForStart = true;
