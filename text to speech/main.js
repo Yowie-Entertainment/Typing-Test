@@ -33,7 +33,9 @@ function textToSpeech(text) {
             utterance.voice = voice;
         }
     }
+    utterance.rate = 5;
     synth.speak(utterance);
+    //console.log(synth.voices);
 }
 
 speechBtn.addEventListener("click", e =>{
@@ -42,6 +44,7 @@ speechBtn.addEventListener("click", e =>{
     e.preventDefault();
     /* if the textarea box is not empty, call textToSpeech with that
     value */
+
     if(textarea.value !== "") {
 
         //if the synth is not speaking right now
