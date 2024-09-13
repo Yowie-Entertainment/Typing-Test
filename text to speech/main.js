@@ -41,6 +41,7 @@ function textToSpeech(text) {
 speechBtn.addEventListener("click", e =>{
     /* this makes it so when the button is pressed it doesn't try to
     redirect to other page */
+
     e.preventDefault();
     /* if the textarea box is not empty, call textToSpeech with that
     value */
